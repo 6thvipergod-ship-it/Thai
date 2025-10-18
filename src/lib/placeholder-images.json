@@ -1,0 +1,118 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-1",
+      "description": "A beautifully plated authentic Thai dish.",
+      "imageUrl": "https://picsum.photos/seed/thaiFood1/1920/1080",
+      "imageHint": "thai food"
+    },
+    {
+      "id": "hero-2",
+      "description": "The elegant and warm interior of a Thai restaurant.",
+      "imageUrl": "https://picsum.photos/seed/thaiRestaurant/1920/1080",
+      "imageHint": "restaurant interior"
+    },
+    {
+      "id": "hero-3",
+      "description": "A close-up of aromatic spices used in Thai cooking.",
+      "imageUrl": "https://picsum.photos/seed/thaiSpices/1920/1080",
+      "imageHint": "thai spices"
+    },
+    {
+      "id": "menu-spring-rolls",
+      "description": "Crispy golden spring rolls on a plate.",
+      "imageUrl": "https://picsum.photos/seed/springrolls/400/300",
+      "imageHint": "spring rolls"
+    },
+    {
+      "id": "menu-satay",
+      "description": "Grilled chicken satay skewers with a dipping sauce.",
+      "imageUrl": "https://picsum.photos/seed/satay/400/300",
+      "imageHint": "chicken satay"
+    },
+    {
+      "id": "menu-tom-yum",
+      "description": "A steaming bowl of spicy Tom Yum soup with shrimp.",
+      "imageUrl": "https://picsum.photos/seed/tomyum/400/300",
+      "imageHint": "tom yum"
+    },
+    {
+      "id": "menu-green-curry",
+      "description": "A bowl of vibrant Thai green curry with chicken.",
+      "imageUrl": "https://picsum.photos/seed/greencurry/400/300",
+      "imageHint": "green curry"
+    },
+    {
+      "id": "menu-pad-thai",
+      "description": "A classic Pad Thai noodle dish with shrimp and lime.",
+      "imageUrl": "https://picsum.photos/seed/realpadthai/400/300",
+      "imageHint": "pad thai"
+    },
+    {
+      "id": "menu-massaman",
+      "description": "A rich and hearty beef Massaman curry.",
+      "imageUrl": "https://picsum.photos/seed/massaman/400/300",
+      "imageHint": "massaman curry"
+    },
+    {
+      "id": "menu-thai-iced-tea",
+      "description": "A tall glass of refreshing Thai iced tea with a swirl of cream.",
+      "imageUrl": "https://picsum.photos/seed/thaiicedtea/400/300",
+      "imageHint": "thai iced tea"
+    },
+    {
+      "id": "menu-lemongrass-tea",
+      "description": "A chilled glass of lemongrass iced tea with a straw.",
+      "imageUrl": "https://picsum.photos/seed/lemongrasstea/400/300",
+      "imageHint": "lemongrass tea"
+    },
+    {
+      "id": "menu-coconut-juice",
+      "description": "A fresh young coconut with a straw, ready to drink.",
+      "imageUrl": "https://picsum.photos/seed/coconutjuice/400/300",
+      "imageHint": "coconut juice"
+    },
+    {
+      "id": "gallery-1",
+      "description": "Guests dining and smiling in the restaurant.",
+      "imageUrl": "https://picsum.photos/seed/galleryDine1/600/800",
+      "imageHint": "people dining"
+    },
+    {
+      "id": "gallery-2",
+      "description": "A flat lay of various Thai dishes on a table.",
+      "imageUrl": "https://picsum.photos/seed/galleryFood/600/400",
+      "imageHint": "food flatlay"
+    },
+    {
+      "id": "gallery-3",
+      "description": "The welcoming entrance of the Thai House Restaurant at night.",
+      "imageUrl": "https://picsum.photos/seed/galleryExterior/600/400",
+      "imageHint": "restaurant exterior"
+    },
+    {
+      "id": "gallery-4",
+      "description": "A chef skillfully preparing a dish in the kitchen.",
+      "imageUrl": "https://picsum.photos/seed/galleryChef/600/800",
+      "imageHint": "chef cooking"
+    },
+    {
+      "id": "gallery-5",
+      "description": "A close-up of a colorful Thai salad.",
+      "imageUrl": "https://picsum.photos/seed/gallerySalad/600/400",
+      "imageHint": "thai salad"
+    },
+    {
+      "id": "gallery-6",
+      "description": "A traditional Thai dessert, Mango Sticky Rice, being served.",
+      "imageUrl": "https://picsum.photos/seed/galleryDessert/600/400",
+      "imageHint": "mango sticky rice"
+    },
+    {
+      "id": "about-us",
+      "description": "The professional and friendly staff of Thai House Restaurant.",
+      "imageUrl": "https://picsum.photos/seed/aboutusStaff/600/400",
+      "imageHint": "restaurant staff"
+    }
+  ]
+}
