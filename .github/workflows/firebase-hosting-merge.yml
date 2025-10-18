@@ -35,7 +35,7 @@ jobs:
           # These parameters must be indented under 'with:'
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
-          projectId: STUDIO_2276881058_45437
+          projectId: studio-2276881058
           channelId: live
 
         
