@@ -4,7 +4,8 @@ name: Deploy to Firebase Hosting on Merge
 on:
   push:
     branches:
-      - master # or master, depending on your default branch
+      # Use 'master' as indicated in your previous errors
+      - master 
 
 jobs:
   build_and_deploy:
@@ -12,32 +13,29 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Run your project's build command here (e.g., for React/Vue)
-      # If you have a static site, you can remove these three lines
-      - run: npm ci
-      - run: npm run build 
-      # -----------------------------------------------------------
-
-      - uses: FirebaseExtended/action-hosting-deploy@v0
+      # 1. Set up Node.js to version 22 (to fix EBADENGINE warning)
+      - name: Set up Node.js 22
+        uses: actions/setup-node@v4
         with:
+          node-version: '22'
+
+      # 2. Install dependencies (requires package.json & package-lock.json)
+      - name: Install Dependencies
+        run: npm ci
+        
+      # 3. Build the project (if applicable)
+      # If your project is a static site (HTML/CSS), you can remove this step
+      # - name: Build Project
+      #   run: npm run build
+
+      # 4. Deploy to Firebase Hosting (The Final Step)
+      - name: Deploy to Firebase
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          # These parameters must be indented under 'with:'
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
-          projectId: studio-2276881058 # Replace this with your actual Firebase Project ID
+          projectId: studio-2276881058
           channelId: live
-jobs:
-      build_and_deploy:
-        runs-on: ubuntu-latest
-        steps:
-          - uses: actions/checkout@v4
-          
-          # --------------------------------------------------------
-          # ADD THIS STEP TO SET NODE VERSION 22
-          - name: Set up Node.js
-            uses: actions/setup-node@v4
-            with:
-              node-version: '22'
-          # --------------------------------------------------------
 
-          # Now the 'npm ci' steps will use Node 22
-          - run: npm ci
-          # ... rest of your steps
+        
