@@ -24,3 +24,20 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
           projectId: studio-2276881058 # Replace this with your actual Firebase Project ID
           channelId: live
+jobs:
+      build_and_deploy:
+        runs-on: ubuntu-latest
+        steps:
+          - uses: actions/checkout@v4
+          
+          # --------------------------------------------------------
+          # ADD THIS STEP TO SET NODE VERSION 22
+          - name: Set up Node.js
+            uses: actions/setup-node@v4
+            with:
+              node-version: '22'
+          # --------------------------------------------------------
+
+          # Now the 'npm ci' steps will use Node 22
+          - run: npm ci
+          # ... rest of your steps
